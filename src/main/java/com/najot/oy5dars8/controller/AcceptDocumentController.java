@@ -1,9 +1,6 @@
 package com.najot.oy5dars8.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/accept-document")
@@ -17,6 +14,11 @@ public class AcceptDocumentController {
     @GetMapping
     public String getDocuments(){
         return " Accepting Documents list";
+    }
+
+    @PostMapping
+    public String createDocument(){
+        return " Create Accepting Documents";
     }
 
 }
